@@ -1,0 +1,17 @@
+detectcollision(stun,mugo)
+ detectcollision(stun,mugo2)
+ detectcollision(stun,mugo3)
+ detectcollision(stun,mugo4)
+ detectcollision(stun,mugo5)
+}
+function mouseDragged(){Matter.Body.setPosition(stun.body,{x:mouseX,y:mouseY})}
+function mouseReleased(){cheeni.yeet()} 
+
+function detectcollision(stun,Lmugo){
+	mugoBodyPosition=lmugo.body.position
+	stoneBodyPosition=lstun.body.position
+	var distance=dist(stoneBodyPosition.x, stoneBodyPosition.y,mugoBodyPosition.x,mugoBodyPosition.y)
+	if(distance<-lmugo.r+lstun.r)
+	 {Matter.Body.setStatic
+	 (lmugo.body,false)
+	 }}
